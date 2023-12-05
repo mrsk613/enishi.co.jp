@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="style.css">
     <title>株式会社 江西</title>
 </head>
@@ -36,9 +37,10 @@
     </header>
     <main>
         <section class="relative con1300">
-            <p class="top_01 fadeInTrigger02">人と会社を繋ぐ架け橋に</p>
-            <div class="ta-right"><img src="image/top_01.jpg" width="65%"></div>
-            <div class="news_box fadeInTrigger02">
+            <p class="top_01" data-aos="fade-zoom-in" data-aos-delay="300">人と会社を繋ぐ架け橋に</p>
+            <div class="ta-right" data-aos="fade-zoom-in"><img src="image/top_01.jpg" width="65%">
+            </div>
+            <div class="news_box" data-aos="fade-zoom-in" data-aos-delay="300">
                 <h3>お知らせ</h3>
                 <ul>
                     <li><span class="date">11/30</span><a href="#">HPをリニューアルしました。</a></li>
@@ -50,14 +52,16 @@
         </section>
         <section class="mt-30 con1300">
             <div class="flex_wrap">
-                <div class="flex_1_2 fadeInTrigger"><a href="#" class="sp_button">採用情報</a></div>
-                <div class="flex_1_2 fadeInTrigger"><a href="#" class="sp_button">50年のあゆみ</a></div>
+                <div class="flex_1_2" data-aos="fade-zoom-in" data-aos-delay="300"><a href="#"
+                        class="sp_button">採用情報</a></div>
+                <div class="flex_1_2" data-aos="fade-zoom-in" data-aos-delay="300"><a href="#"
+                        class="sp_button">50年のあゆみ</a></div>
             </div>
         </section>
         <section class="mt-60 bg_green relative">
             <h2 class="fc-white ta-center">事業案内</h2>
             <p class="fc-white ta-center mt-20">「人と会社を繋ぐ架け橋に」を理念に会社も人も気持ちよく仕事ができるよう手助けしてまいります。</p>
-            <div class="content_box fadeInTrigger">
+            <div class="content_box" data-aos="fade-up" data-aos-duration="3000">
                 <div class="flex_wrap">
                     <div class="flex_1_4"><a href="#" class="con_button">人材派遣</a></div>
                     <div class="flex_1_4"><a href="#" class="con_button">紹介予定派遣</a></div>
@@ -182,6 +186,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

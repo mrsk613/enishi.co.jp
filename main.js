@@ -17,79 +17,11 @@ function ScrollTimelineAnime() {
     });
 }
 
-$(window).on('scroll', function () {
-    ScrollTimelineAnime();
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).on('scroll', function(){
+	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
 });
 
-function fadeAnime() {
-    $('.fadeInTrigger').each(function () {
-        var elemPos = $(this).offset().top + 100;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight) {
-            $(this).addClass('fadeIn');
-        } else {
-            $(this).removeClass('fadeIn');
-        }
-    });
-
-    $('.fadeUpTrigger').each(function () {
-        var elemPos = $(this).offset().top + 100;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight) {
-            $(this).addClass('fadeUp');
-        } else {
-            $(this).removeClass('fadeUp');
-        }
-    });
-
-    $('.fadeLeftTrigger').each(function () {
-        var elemPos = $(this).offset().top + 100;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight) {
-            $(this).addClass('fadeLeft');
-        } else {
-            $(this).removeClass('fadeLeft');
-        }
-    });
-
-    $('.fadeRightTrigger').each(function () {
-        var elemPos = $(this).offset().top + 100;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight) {
-            $(this).addClass('fadeRight');
-        } else {
-            $(this).removeClass('fadeRight');
-        }
-    });
-
-}
-
-$(window).scroll(function () {
-    fadeAnime();
-});
-
-function fadeAnime02() {
-    $('.fadeInTrigger02').each(function () {
-        var elemPos = $(this).offset().top + 100;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight) {
-            $(this).addClass('fadeIn');
-        } else {
-            $(this).removeClass('fadeIn');
-        }
-    });
-
-}
-
-
-$(window).on('load', function () {
-    fadeAnime02();
-});
 
 $(".openbtn").click(function () {
     $(this).toggleClass('active');
@@ -102,21 +34,21 @@ $("#sp_nav a").click(function () {
 });
 
 function PageTopAnime() {
-	var scroll = $(window).scrollTop();
-	if (scroll >= 200){//上から200pxスクロールしたら
-		$('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
-		$('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
-	}else{
-		if($('#page-top').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
-			$('#page-top').removeClass('UpMove');//UpMoveというクラス名を除き
-			$('#page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
-		}
-	}
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200) {//上から200pxスクロールしたら
+        $('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
+        $('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
+    } else {
+        if ($('#page-top').hasClass('UpMove')) {//すでに#page-topにUpMoveというクラス名がついていたら
+            $('#page-top').removeClass('UpMove');//UpMoveというクラス名を除き
+            $('#page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
+        }
+    }
 }
 
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
-	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
 });
 
 $('#page-top a').click(function () {
