@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #E3F1E7;
+    background: #e3f1e7;
     padding-top: 100px;
 }
 
@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width: 1300px) {
     .con1300 {
         width: 100%;
     }
@@ -385,8 +385,7 @@ body {
     order: -1;
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
     .flex_1_2 {
         display: block;
         width: 100%;
@@ -417,7 +416,7 @@ a.sp_button {
     border-radius: 10px;
     font-size: 28px;
     padding: 50px 20px;
-    color: #374B43;
+    color: #374b43;
     text-decoration: none;
     display: block;
     font-weight: bold;
@@ -450,7 +449,7 @@ a.con_button:hover {
 
 a.con_button::before,
 a.con_button::after {
-    content: '';
+    content: "";
     position: absolute;
     border: solid #363636;
     width: 10px;
@@ -477,7 +476,7 @@ a.con_button:hover::after {
     border-color: #363636;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     a.con_button {
         min-width: 100%;
     }
@@ -504,7 +503,7 @@ header {
 .logo {
     font-weight: bold;
     font-size: 1.8em;
-    color: #374B43;
+    color: #374b43;
 }
 
 #pc_nav {
@@ -531,14 +530,14 @@ header {
 }
 
 #pc_nav li a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 10%;
     width: 80%;
     height: 2px;
     background: #363636;
-    transition: all .3s;
+    transition: all 0.3s;
     transform: scale(0, 1);
     transform-origin: center top;
 }
@@ -555,7 +554,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     #pc_nav {
         display: none;
     }
@@ -580,7 +579,7 @@ header {
 
     .openbtn span {
         display: inline-block;
-        transition: all .4s;
+        transition: all 0.4s;
         position: absolute;
         left: 14px;
         height: 3px;
@@ -671,14 +670,14 @@ header {
     }
 
     #sp_nav li a::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 10%;
         width: 80%;
         height: 2px;
         background: #363636;
-        transition: all .3s;
+        transition: all 0.3s;
         transform: scale(0, 1);
         transform-origin: center top;
     }
@@ -691,9 +690,9 @@ header {
 /* top */
 
 .top_01 {
-    font-family: '游明朝';
+    font-family: "游明朝";
     font-size: 3em;
-    color: #374B43;
+    color: #374b43;
     font-weight: bold;
     position: absolute;
     top: 20px;
@@ -737,7 +736,7 @@ header {
     opacity: 0.7;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .top_01 {
         font-size: 1.8em;
         top: 20px;
@@ -765,7 +764,7 @@ header {
     padding: 60px 20px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .content_box {
         position: absolute;
         width: 90%;
@@ -782,9 +781,9 @@ header {
 }
 
 .top_02 {
-    font-family: '游明朝';
+    font-family: "游明朝";
     font-size: 2.4em;
-    color: #374B43;
+    color: #374b43;
     font-weight: bold;
     position: absolute;
     text-shadow: #fff 3px 3px 3px;
@@ -801,7 +800,7 @@ header {
 .button a {
     padding: 20px 0;
     font-size: 28px;
-    color: #374B43;
+    color: #374b43;
     text-decoration: none;
     background: #fff;
     border: solid 1px #363636;
@@ -813,17 +812,17 @@ header {
 }
 
 .button a:hover {
-    background: #374B43;
+    background: #374b43;
     color: #fff;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
     .about img {
         width: 100%;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 767px) {
     .about {
         margin-top: 400px;
     }
@@ -833,13 +832,15 @@ header {
         top: 40%;
         right: 0;
         color: #fff;
-        text-shadow: #374B43 3px 3px 2px;
+        text-shadow: #374b43 3px 3px 2px;
     }
 
     .button {
         position: absolute;
         bottom: 5%;
-        right: 10%;
+        left: 20%;
+        right: 0;
+        transform: translateX(-50%);
     }
 
     .button a {
@@ -867,7 +868,7 @@ header {
 }
 
 .timeline dt {
-    color: #374B43;
+    color: #374b43;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -882,7 +883,7 @@ header {
 }
 
 .timeline li::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -891,7 +892,6 @@ header {
     background: #363636;
     border-radius: 50%;
 }
-
 
 /* footer */
 
@@ -918,7 +918,6 @@ footer a:hover {
     opacity: 0.6;
 }
 
-
 /* pagetop button */
 #page-top a {
     display: flex;
@@ -928,7 +927,7 @@ footer a:hover {
     border-radius: 5px;
     width: 60px;
     height: 60px;
-    color:#fff;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
