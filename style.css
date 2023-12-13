@@ -828,23 +828,23 @@ header {
     }
 
     .top_02 {
+        position: relative;
         font-size: 1.2em;
-        top: 40%;
         right: 0;
-        color: #fff;
-        text-shadow: #374b43 3px 3px 2px;
+        display: block;
+        margin: 0 30px 20px 30px;
+        color: #374b43;
     }
 
     .button {
-        position: absolute;
-        bottom: 5%;
-        left: 20%;
+        position: relative;
         right: 0;
-        transform: translateX(-50%);
+        text-align: center;
     }
 
     .button a {
         font-size: 18px;
+        margin: 0 auto;
     }
 }
 
