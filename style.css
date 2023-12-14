@@ -816,6 +816,10 @@ header {
     color: #fff;
 }
 
+.pc-only {
+    display: block;
+}
+
 @media screen and (max-width: 1000px) {
     .about img {
         width: 100%;
@@ -845,6 +849,10 @@ header {
     .button a {
         font-size: 18px;
         margin: 0 auto;
+    }
+
+    .pc-only {
+        display: none;
     }
 }
 
