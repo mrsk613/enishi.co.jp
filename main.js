@@ -18,8 +18,8 @@ function ScrollTimelineAnime() {
 }
 
 // 画面をスクロールをしたら動かしたい場合の記述
-$(window).on('scroll', function(){
-	ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
+$(window).on('scroll', function () {
+    ScrollTimelineAnime();// 線が伸びる関数を呼ぶ
 });
 
 
@@ -56,4 +56,21 @@ $('#page-top a').click(function () {
         scrollTop: 0//ページトップまでスクロール
     }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
     return false;//リンク自体の無効化
+});
+
+$(function () {
+    $(window).scroll(function () {
+        var animTrigger = $('.top-title');
+        $(animTrigger).each(function () {
+            var scroll = $(window).scrollTop(),
+                elemTop = $(this).offset().top,
+                windowHeight = $(window).height();
+
+            if (scroll > elemTop - windowHeight + 200) {
+                $(this).addClass('is-animated');
+            }
+        });
+    });
+    $(window).trigger('scroll');
+
 });
